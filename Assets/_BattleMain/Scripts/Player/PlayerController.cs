@@ -106,7 +106,7 @@ namespace BattleArena
         public void Hit(float damage)
         {
             var newHealth = _currentHealth - damage;
-            if (newHealth < 0)
+            if (newHealth <= 0)
             {
                 newHealth = 0;
                 Die();
